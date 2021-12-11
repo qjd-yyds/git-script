@@ -88,6 +88,12 @@ git checkout -b <branchname> // 切换分支并创建
 
 ```js
 git merge <barnchname> // 把目标分支合并到当前分支
-快速前移
+// 快速前移概念:
+// 1.如果当前分支master的快照 a=>b=>c
+// 2.合并的feature分支快照为a=>b=>c=>d 当前commit为 修改d.js
+// 3.执行合并操作 git merge feature之后 不会生成merge的说明并且快速移动到feature的commit => 修改d.js
+// 4.无法判断是合并操作还是master执行了commit操作
+
+git merge --no-ff -m "合并操作 防止了快速前移 " feature // 消除了快速前移，并且commit变为 合并操作 防止了快速前移 
 ```
 
