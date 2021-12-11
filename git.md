@@ -120,3 +120,13 @@ git commit -m "重置上一次修改的描述" --amend 	// 当上一次commit描
 
 #### 存储
 
+```
+git stash // 存储工作区和其他暂存区未修改文件
+git stash -u // 未追踪文件也被存储
+git stash list // 查看存储的文件修改
+git stash apply stash@{0} // 取出存储中的文件修改 不在暂存区 stash@{0} 为指定存储
+git stash apply --index // 取出存储中的文件修改 放在暂存区
+git stash drop 	// 	删除存储
+```
+
+#### 变基
