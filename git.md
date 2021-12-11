@@ -72,7 +72,7 @@ git log --pretty=short // hash和描述 作者
 git log --pretty=full // hash和描述 作者 提交者
 git log --pretty=fuller /// hash和描述 作者 提交者 日期
 git log --pretty=format:"" // 定制显示的日志
-git log --all --decorate --oneline --graph // all => 查看所有分支 oneline => hash描述 --graph 树桩可视化
+git log --all --decorate --oneline --graph // all => 查看所有分支 oneline => hash描述 --graph 树桩可视化 decorate => 装饰每个提交指向分支 
 ```
 
 #### 分支操作
@@ -88,5 +88,6 @@ git checkout -b <branchname> // 切换分支并创建
 
 ```js
 git merge <barnchname> // 把目标分支合并到当前分支
+快速前移
 ```
 
