@@ -103,9 +103,12 @@ git merge --abort // 	执行合并操作后 发生冲突 ，用来取消合并
 
 #### 撤销
 
-```
+```js
 git checkout -- a.txt // 撤销没有被加入暂存区的a.txt 的修改
 git reset HEAD a.txt // 取消暂存
-
+git reset HEAD^ // 	撤销一次commit 有些编译器可能吧^ 看作换行 需要加上引号"HEAD^"
+git reset HEAD^^ // 	撤销两次次commit
+git commit --amend // 当出现两次提交commit相同 合并提交
+git commit -m "重置上一次修改的描述" --amend 	// 当上一次commit描述写错了 可以用这个来重置commit
 ```
 
