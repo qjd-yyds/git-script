@@ -82,13 +82,14 @@ git branch // 查看本地分支
 git branch <branchname>   // 创建分支
 git checkout // 切换分支
 git checkout -b <branchname> // 切换分支并创建
+git branch -d <branchname> // 删除分支
 ```
 
 #### 分支合并
 
 ```js
 git merge <barnchname> // 把目标分支合并到当前分支
-// 快速前移概念:
+// 快速前移概念(直接级祖先关系前移):
 // 1.如果当前分支master的快照 a=>b=>c
 // 2.合并的feature分支快照为a=>b=>c=>d 当前commit为 修改d.js
 // 3.执行合并操作 git merge feature之后 不会生成merge的说明并且快速移动到feature的commit => 修改d.js
