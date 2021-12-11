@@ -101,3 +101,11 @@ git merge --no-ff -m "合并操作 防止了快速前移 " feature // 消除了�
 git merge --abort // 	执行合并操作后 发生冲突 ，用来取消合并
 ```
 
+#### 撤销
+
+```
+git checkout -- a.txt // 撤销没有被加入暂存区的a.txt 的修改
+git reset HEAD a.txt // 取消暂存
+
+```
+
