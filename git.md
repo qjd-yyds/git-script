@@ -120,7 +120,7 @@ git commit -m "重置上一次修改的描述" --amend 	// 当上一次commit描
 
 #### 存储
 
-```
+```js
 git stash // 存储工作区和其他暂存区未修改文件
 git stash -u // 未追踪文件也被存储
 git stash list // 查看存储的文件修改
@@ -129,4 +129,11 @@ git stash apply --index // 取出存储中的文件修改 放在暂存区
 git stash drop 	// 	删除存储
 ```
 
-#### 变基
+#### 变基 
+
+类似合并
+
+```js
+git rebase master // 变基的基础为master，提取当前feature分支和master分支非公共快照，切换master当执行git merge 实现快速master快速前移，
+```
+
