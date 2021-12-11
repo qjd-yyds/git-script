@@ -137,3 +137,22 @@ git stash drop 	// 	删除存储
 git rebase master // 变基的基础为master，提取当前feature分支和master分支非公共快照，切换master当执行git merge 实现快速master快速前移，
 ```
 
+#### 远程仓库
+
+```js
+git remote add origin <url> // 链接本地仓库和远程仓库url
+git push -u origin master // 提交远程仓库 master分支 并且后期提交自动提交远程master分支
+git push // 提交代码当前分支到关联的远程分支
+git clone <url> // 克隆项目到本地
+```
+
+#### 标签
+
+```js
+git tag v0.0.1 // 当前commit上 打上版本v0.0.1标签
+git tag v0.0.2 hash // 给hash 对应的commit 打上0.0.2标签
+git tag -a v0.0.3 -m "当前标签描述" hash // 给hash对应的commit 打上有描述的标签
+git tag -d v0.0.2 // 删除标签
+git show v0.0.3 // 查看当前版本的标签信息
+```
+
