@@ -144,6 +144,12 @@ git remote add origin <url> // 链接本地仓库和远程仓库url
 git push -u origin master // 提交远程仓库 master分支 并且后期提交自动提交远程master分支
 git push // 提交代码当前分支到关联的远程分支
 git clone <url> // 克隆项目到本地
+git pull // 拉取代码
+git checkout -b developer origin/developer // 远程克隆分支
+git push origin :developer // 删除远程developer 分支
+git push origin v0.0.1 // 提交一个标签
+git push origin --tags //  提交所有标签
+git push origin :refs/tags/v0.0.1 // 删除远程标签
 ```
 
 #### 标签
