@@ -53,3 +53,34 @@ git status // 查看文件状态
 git status -s // short简写，简化状态打印
 ```
 
+#### 查看文件修改
+
+```javascript
+git diff // 查看工作区和暂存区的差异
+git diff --staged // 查看暂存区差异
+```
+
+#### 查看日志
+
+```js
+git log
+git log -p // 详细日志
+git log --stat // 显示commit 和diff每个文件差异
+git log -2 // 显示两个记录
+git log --pretty=oneline // hash和描述
+git log --pretty=short // hash和描述 作者
+git log --pretty=full // hash和描述 作者 提交者
+git log --pretty=fuller /// hash和描述 作者 提交者 日期
+git log --pretty=format:"" // 定制显示的日志
+```
+
+#### 分支操作
+
+```js
+git branch // 查看本地分支
+git branch <branchname>   // 创建分支
+git checkout // 切换分支
+git checkout -b <branchname> // 切换分支并创建
+```
+
+#### 分支合并
