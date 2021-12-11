@@ -82,7 +82,8 @@ git branch // 查看本地分支
 git branch <branchname>   // 创建分支
 git checkout // 切换分支
 git checkout -b <branchname> // 切换分支并创建
-git branch -d <branchname> // 删除分支
+git branch -d <branchname> // 删除已经被合并的分支
+git branch -D <branchname> // 强制删除分支
 ```
 
 #### 分支合并
@@ -96,5 +97,7 @@ git merge <barnchname> // 把目标分支合并到当前分支
 // 4.无法判断是合并操作还是master执行了commit操作
 
 git merge --no-ff -m "合并操作 防止了快速前移 " feature // 消除了快速前移，并且commit变为 合并操作 防止了快速前移 
+
+git merge --abort // 	执行合并操作后 发生冲突 ，用来取消合并
 ```
 
